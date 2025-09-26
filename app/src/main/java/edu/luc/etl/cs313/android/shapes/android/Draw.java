@@ -30,25 +30,25 @@ public class Draw implements Visitor<Void> {
 
     @Override
     public Void onStrokeColor(final StrokeColor c) {
-        //canvas.
+        //canvas.draw
         return null;
     }
 
     @Override
     public Void onFill(final Fill f) {
-
+        //canvas.draw
         return null;
     }
 
     @Override
     public Void onGroup(final Group g) {
-
+        //canvas.draw
         return null;
     }
 
     @Override
     public Void onLocation(final Location l) {
-
+        //canvas.draw
         return null;
     }
 
@@ -60,7 +60,7 @@ public class Draw implements Visitor<Void> {
 
     @Override
     public Void onOutline(Outline o) {
-        //canvas.
+        //canvas.draw
         return null;
     }
 
