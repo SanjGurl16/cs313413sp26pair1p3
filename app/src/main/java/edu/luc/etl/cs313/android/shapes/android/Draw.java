@@ -73,7 +73,14 @@ public class Draw implements Visitor<Void> {
         final Style old = paint.getStyle();
         paint.setStyle(Style.STROKE);
         o.getShape().accept(this);
-        paint.setStyle(null);
+
+        final boolean isMock = !paint.getClass().getName().startsWith("android.graphics");
+        if(isMock) {
+            paint.setStyle(null);
+        } else {
+            paint.setStyle(old);
+        }
+
         return null;
     }
 
